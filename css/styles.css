@@ -10981,3 +10981,45 @@ section.resume-section .resume-section-content {
     margin: 0 auto;
   }
 }
+.experience-cards {
+  padding: 4rem 2rem;
+  background: #f6f2ec;
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.exp-card {
+  background: white;
+  border-left: 6px solid #BF766F; /* Terracotta tone */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.exp-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.exp-card .hover-info {
+  opacity: 0;
+  max-height: 0;
+  transition: all 0.3s ease;
+  color: #A67051;
+}
+
+.exp-card:hover .hover-info {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 0.5rem;
+}
